@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            flex: 1;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
+    </head>
+    <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/stussylogo.png" alt="" style="height: 30px;"></a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#Courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#Enrollment">Enrollment</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#Gallery">Gallery</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                Search
+                </button>
+            </form>
+        </div>
+      </div>
+    </nav>
+    <!--end navbar-->
+    <!--carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="height: 800px;">
+            <div class="carousel-item active">
+                <img src="images/Stussy_Kyoto_Chapter_1_900x.webp"d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 800px;">
+                <img src="images/Stussy_Kyoto_Chapter_1_900x.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 800px;">
+                <img src="images/Stussy-Birkenstock---Editorial--7_1080x.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--end carousel-->
+    <!-- Courses -->
+    <div class="container mt-5">
+        <h2 class="text-center pb-5">Courses</h2>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/Stussy_FA22_D1_Lookbook_-_Crops_-_R1_-_2208172_540x.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/Stussy_FA22_D1_Lookbook_-_Crops_-_R1_-_22081714_540x.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/Stussy_FA22_D1_Lookbook_-_Crops_-_R1_-_2208176_540x.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="images/Stussy_FA22_D1_Lookbook_-_Crops_-_R1_-_2208178_540x.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Click me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="images/Stussy_FA22_D1_Lookbook_-_Crops_-_R1_-_2208179_540x.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Click me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <img src="images/Stussy_FA22_D1_Lookbook_-_Crops_-_R1_-_22081710_540x.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Click me</a>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+    <!-- Enrollment -->
+    <div class="container mt-5">
+        <h2 class="text-center pb-5">Enrollment</h2>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/1212.webp"class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/1111.webp"class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/333.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/444.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/8.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/100.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/7.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/6.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/99.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/2.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/1.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="images/5.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Click me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <h2 id="Gallery" class="text-center pd-5 mt-5 mb-5">Gallery</h2>
+      <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="images/gal4.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col">
+                <img src="images/gal5.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col">
+                <img src="images/gal1.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col">
+                <img src="images/gal2.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col">
+                <img src="images/gal3.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col">
+                <img src="images/gal6.jpg" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-info-subtle">
+        <div class="container text-center">
+            <p>
+                Luis Musni 2023
+                <a href="https://www.facebook.com/stussy/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/stussy/"><i class="fab fa-instagram"></i></a>
+
+                <script 
+                src="https://kit.fontawesome.com/d9f65e7e7e.js" 
+                crossorigin="anonymous">
+                </script>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>ter>
+</body>
+</html>
